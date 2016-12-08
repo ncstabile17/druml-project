@@ -164,7 +164,7 @@ header {
         }
     }
     .device-container {
-        max-width: 300px;
+        max-width: 400px;
         margin: 0 auto 100px;
         .screen img {
             border-radius: 3px;
@@ -178,19 +178,22 @@ header {
             height: 100vh;
             .header-content-inner {
                 max-width: none;
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
+                max-height: calc(100vh - 105px);
+                margin: 150px auto 0;
                 h1 {
                     font-size: 35px;
                 }
             }
         }
-        .device-container {
-            max-width: none;
-            max-height: calc(100vh - 100px);
-            margin: 100px auto 0;
+        .device-content {
+            text-align: left;
+            padding: 0;
+            height: 100vh;
+            .device-container {
+                max-width: none;
+                max-height: calc(100vh - 150px);
+                margin: 150px auto 0;
+            }
         }
     }
     @media (min-width: 992px) {

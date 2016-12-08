@@ -182,7 +182,7 @@ header .header-content .header-content-inner .list-badges img {
   margin-bottom: 25px;
 }
 header .device-container {
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto 100px;
 }
 header .device-container .screen img {
@@ -199,18 +199,21 @@ header .device-container .screen img {
   }
   header .header-content .header-content-inner {
     max-width: none;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    max-height: calc(-5vh);
+    margin: 150px auto 0;
   }
   header .header-content .header-content-inner h1 {
     font-size: 35px;
   }
-  header .device-container {
+  header .device-content {
+    text-align: left;
+    padding: 0;
+    height: 100vh;
+  }
+  header .device-content .device-container {
     max-width: none;
-    max-height: calc(0vh);
-    margin: 100px auto 0;
+    max-height: calc(-50vh);
+    margin: 150px auto 0;
   }
 }
 @media (min-width: 992px) {
